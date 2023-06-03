@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="icon" href="image/instagram-icon.png">
+
+    <title>Login • Instagram</title>
+</head>
+<body>
+    <div class="container">
+        <div class="giris-form">
+            <div class="giris-ayar">
+                    <img src="image/Instagram_logo.svg.png" alt="">
+                <form>
+                    <input class="box username" type="text" placeholder="Phone number, username, or email">
+                    <input class="box passwprd" type="password" placeholder="Password"><br>
+                    <button class="loginBtn">Log in</button>
+                </form>
+                <div class="or">
+                    <span>OR</span>
+                </div>
+                <div class="kaydolma-form">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <span>Log in with Facebook</span>
+                </div>
+                <a href="" class="forgot-pass">Forgot password?</a>
+            </div>   
+        </div>
+
+
+        <div class="facebook">
+            <h3>Don't have an account? <a href="index1.html">Sign up</a></h3>
+        </div>     
+
+        <div class="aplition-instagram">
+            <h3>Get the app.</h3>
+            <div class="applition">
+                <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DsignupPage%26ig_mid%3DD7D865C8-D820-4D0E-96CB-BC06985B1B13%26utm_content%3Dlo%26utm_medium%3Dbadge" target="_blank"><img src="image/google-play.png" alt=""></a>
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+                <a href="ms-windows-store://pdp/?productid=9nblggh5l9xt&referrer=appbadge&source=www.instagram.com&mode=mini&pos=0%2C0%2C1920%2C1040&hl=ar" target="_blank"><img src="image/microsoft.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="iletisim">
+        <p>Meta</p>
+        <p>About</p>
+        <p>Blog</p>
+        <p>Jobs</p>
+        <p>Help</p>
+        <p>Api</p>
+        <p>Privacy</p>
+        <p>Terms</p>
+        <p>Top Accounts</p>
+        <p>Locations</p>
+        <p>Instagram Lite</p>
+        <p>Contact Uploading & Non-Users</p>
+        <p>Meta Verified</p>
+        <p>© 2023 Instagram from Meta</p>
+    </div>
+
+    <script>
+        let loginBtn = document.querySelector('.loginBtn');
+        let passwprd = document.querySelector('.passwprd');
+        let username = document.querySelector('.username');
+    
+       loginBtn.addEventListener('click', function(e){
+        e.preventDefault();
+        if(username.value == 'ahmet' && passwprd.value == '123') {
+            alert('ahmet bey hosgeldiniz');  
+        }  
+        username.value = '';
+        passwprd.value = '';
+       } )
+
+
+    </script>
+</body>
+</html>
